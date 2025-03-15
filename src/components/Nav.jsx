@@ -7,7 +7,7 @@ const Nav = () => {
   const [navHidden, setNavHidden] = useState(true);
   const toggleNav = () => setNavHidden(!navHidden);
   return (
-    <header className="padding-x py-8 absolute 2-10 w-full">
+    <header className="padding-x py-8 2-10 w-full">
       <nav className="flex justify-between items-center max-container">
         <a href="/">
           <img 
