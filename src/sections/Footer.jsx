@@ -25,16 +25,18 @@ const Footer = () => {
           <div key={i} className="flex flex-col gap-5 text-white">
             <h3 className="text-2xl space-y-2">{title}</h3>
             {links.map(({name, href}, i) => (
-              <a key={i} href={href}>{name}</a>
+              <a 
+              className="cursor-pointer hover:opacity-40"
+              key={i} href={href}>{name}</a>
             ))}
           </div>
         ))}
       </div>
-      <div className="flex  flex-col items-center justify-center md:justify-between w-full">
-        <p className="text-white cursor-pointer">
+      <div className="flex flex-col items-center justify-center md:flex-row md:justify-between w-full">
+        <p className="text-white text-lg cursor-pointer">
           &copy; Copyright. All rights reserved.
         </p>
-        <p className="text-white cursor-pointer">
+        <p className="text-white text-lg cursor-pointer">
           Terms & Conditions
         </p>
       </div>
