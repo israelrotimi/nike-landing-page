@@ -10,9 +10,8 @@ const CustomerReviews = () => {
       What Our <span className="text-coral-red">Customers</span> Say?
     </h2>
     <div className="flex flex-wrap items-center justify-center">
-     ''
-      {reviews.map(({img, customer, rating, feedback}, i) => (
-        <ReviewCard key={i} imgUrl={img} comment={feedback} customer={customer} rating={rating} />
+      {reviews.map(({imgURL, customer, rating, feedback}, i) => (
+        <ReviewCard key={i} imgUrl={imgURL} comment={feedback} customer={customer} rating={rating} />
       ))}
     </div>
     </div>

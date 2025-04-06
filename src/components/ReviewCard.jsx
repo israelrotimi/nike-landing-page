@@ -5,7 +5,7 @@ const ReviewCard = ({ imgUrl, comment, customer, rating}) => {
     <div 
     className="flex flex-col justify-center items-center gap-5">
         <img src={imgUrl} alt="customer"
-        className="rounded-full w-2/3" />
+        className="rounded-full w-1/4" />
         <p className="info-text font-montserrat w-2/3">
             {comment}
         </p>

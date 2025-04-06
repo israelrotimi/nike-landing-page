@@ -15,12 +15,12 @@ const PopularProducts = () => {
       </p>
       <div 
       className="flex flex-wrap items-center justify-center">
-        {products.map(({img, name, price}, i) => (
-          <div 
+        {products.map(({imgURL, name, price}, i) => (
+          <div key={i}
           className="flex flex-col gap-5 my-5 mx-1">
             <div
             className="flex justify-center items-center bg-card bg-center bg-cover w-52 min-h-52 rounded-xl max-sm:p-4">
-              <img src={img} alt=""
+              <img src={imgURL} alt=""
               width={150}
               height={103.34}
               className='object-contain' />
